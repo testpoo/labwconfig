@@ -62,9 +62,12 @@ GLFW_IM_MODULE=fcitx
       <action name="Execute" command="thunar" />
     </keybind>
 ```    
-#### 3.3 背景设置
+#### 3.3 开机启动设置
 ```
 nano autostart
+
+# 背景设置
+swaybg -i '/home/poo/图片/3.jpg' >/dev/null 2>&1 &
 
 fcitx5 >/dev/null 2>&1 &
 blueman-applet >/dev/null 2>&1 &
@@ -81,6 +84,7 @@ font=monospace:size=12
 mkdir -p ~/.config/kanshi
 nano config
 
+# 缩放1.25
 profile nomad {
     output eDP-1 enable scale 1.25
 }
